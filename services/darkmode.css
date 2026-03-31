@@ -1,0 +1,18 @@
+
+html[data-theme="dark"] .services-section {
+  background-color: #0d1714 !important; 
+  color: #c8f0e8 !important;            
+}
+
+
+html[data-theme="dark"] .services-section .sec-sub,
+html[data-theme="dark"] .services-section .card-body p,
+html[data-theme="dark"] .services-section .card-features li {
+  color: #9ecfc3 !important;
+}
+
+
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+  background-color: #0d1714 !important;
+}

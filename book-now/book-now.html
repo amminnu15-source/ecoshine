@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login — Ecoshine Services</title>
+  <link rel="stylesheet" href="../css/shared.css"/>
+  <link rel="stylesheet" href="../book-now/book-now.css"/>
+</head>
+<body>
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">Ecoshine Services</div>
+   
+  <nav class="sidebar-nav">
+    <div class="nav-group-label">Main</div>
+    
+    <a class="nav-item active" href="book-now.html"><span class="nav-icon">📅</span> Book Now <span class="nav-badge">New</span></a>
+  
+    <div class="nav-group-label">Management</div>
+    <a class="nav-item" href="#"><span class="nav-icon">🏠</span> My Cleanings</a>
+    <a class="nav-item" href="#"><span class="nav-icon">💳</span> Payments</a>
+    <a class="nav-item" href="#"><span class="nav-icon">⭐</span> Reviews</a>
+    <div class="nav-group-label">Account</div>
+    <a class="nav-item" href="#"><span class="nav-icon">👤</span> Profile</a>
+    <a class="nav-item" href="#"><span class="nav-icon">⚙️</span> Settings</a>
+    <a class="nav-item" href="#"><span class="nav-icon">🔔</span> Notifications <span class="nav-badge">3</span></a>
+  </nav>
+  <div class="sidebar-footer">
+    <div class="sidebar-user">
+      <div class="user-avatar">SM</div>
+      <div class="user-info"><strong>Sarah Mitchell</strong><span>Premium Member</span></div>
+    </div>
+  </div>
+</aside>
+
+<div class="page-wrap">
+  <header class="topbar">
+    <button class="topbar-menu-btn" id="menuBtn">☰</button>
+    <div class="topbar-title">Login <span>Book Your Services</span></div>
+  
+  </header>
+
+  <main class="book-main">
+
+    
+    <div class="book-progress" data-reveal>
+      <div class="prog-step active" data-step="1"><div class="ps-num">1</div><span>Service</span></div>
+      <div class="prog-line"></div>
+      <div class="prog-step" data-step="2"><div class="ps-num">2</div><span>Schedule</span></div>
+      <div class="prog-line"></div>
+      <div class="prog-step" data-step="3"><div class="ps-num">3</div><span>Details</span></div>
+      <div class="prog-line"></div>
+      <div class="prog-step" data-step="4"><div class="ps-num">4</div><span>Confirm</span></div>
+    </div>
+
+    <div class="book-layout">
+
+
+      <div class="book-steps">
+
+        
+        <div class="step-panel active" id="step1">
+          <div class="step-header"> <h2>Welcome Back</h2><p>Select the cleaning type that fits your needs.</p></div>
+          <div class="service-options">
+            <label class="service-opt">
+              <input type="radio" name="service" value="standard"/>
+              <div class="sopt-card">
+                <div class="sopt-icon">🛋️</div>
+                <div class="sopt-info">
+                  <strong>Standard Cleaning</strong>
+                  <span>Regular maintenance · up to 1,500 sq ft</span>
+                </div>
+                <div class="sopt-price">From $89</div>
+                <div class="sopt-check">✓</div>
+              </div>
+            </label>
+            <label class="service-opt">
+              <input type="radio" name="service" value="deep" checked/>
+              <div class="sopt-card selected">
+                <div class="sopt-icon">✨</div>
+                <div class="sopt-info">
+                  <strong>Deep Cleaning</strong>
+                  <span>Intensive clean · appliances, grout & more</span>
+                </div>
+                <div class="sopt-price">From $149</div>
+                <div class="sopt-check">✓</div>
+              </div>
+            </label>
+            <label class="service-opt">
+              <input type="radio" name="service" value="moveinout"/>
+              <div class="sopt-card">
+                <div class="sopt-icon">📦</div>
+                <div class="sopt-info">
+                  <strong>Move In/Out</strong>
+                  <span>Full property · top-to-bottom refresh</span>
+                </div>
+                <div class="sopt-price">From $229</div>
+                <div class="sopt-check">✓</div>
+              </div>
+            </label>
+            <label class="service-opt">
+              <input type="radio" name="service" value="airquality"/>
+              <div class="sopt-card">
+                <div class="sopt-icon">🌬️</div>
+                <div class="sopt-info">
+                  <strong>Air Quality Care</strong>
+                  <span>HEPA vacuuming · vent cleaning</span>
+                </div>
+                <div class="sopt-price">From $119</div>
+                <div class="sopt-check">✓</div>
+              </div>
+            </label>
+          </div>
+       
+          <div class="addons-section">
+            <h4>Add-ons <span class="badge badge-green">Optional</span></h4>
+            <div class="addons-grid">
+              <label class="addon-opt"><input type="checkbox" value="15"/><span>🪟 Window Washing</span><em>+$15</em></label>
+              <label class="addon-opt"><input type="checkbox" value="20"/><span>🛏️ Laundry Folding</span><em>+$20</em></label>
+              <label class="addon-opt"><input type="checkbox" value="25"/><span>🧺 Inside Oven</span><em>+$25</em></label>
+              <label class="addon-opt"><input type="checkbox" value="10"/><span>🌱 Eco Deodorize</span><em>+$10</em></label>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="toStep2">Continue to Schedule →</button>
+        </div>
+
+    
+        <div class="step-panel" id="step2">
+          <div class="step-header"><h2>Pick a Date & Time</h2><p>Choose when works best for you.</p></div>
+          <div class="calendar-section">
+            <div class="cal-header">
+              <button class="cal-nav" id="calPrev">‹</button>
+              <h3 id="calMonthYear">April 2026</h3>
+              <button class="cal-nav" id="calNext">›</button>
+            </div>
+            <div class="cal-days-header">
+              <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <div class="cal-grid" id="calGrid"></div>
+          </div>
+          <div class="time-slots" id="timeSlots">
+            <h4>Available Times</h4>
+            <div class="slots-grid" id="slotsGrid"></div>
+          </div>
+          <div class="step-btns">
+            <button class="btn btn-ghost" id="backToStep1">← Back</button>
+            <button class="btn btn-primary" id="toStep3">Continue to Details →</button>
+          </div>
+        </div>
+
+       
+        <div class="step-panel" id="step3">
+          <div class="step-header"><h2>Your Details</h2><p>Help us understand your home.</p></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Home Size</label>
+              <select id="homeSize">
+                <option>Under 1,000 sq ft</option>
+                <option selected>1,000 – 1,500 sq ft</option>
+                <option>1,500 – 2,000 sq ft</option>
+                <option>2,000 – 2,500 sq ft</option>
+                <option>2,500+ sq ft</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Number of Bedrooms</label>
+              <select id="bedrooms">
+                <option>Studio</option><option>1 Bedroom</option>
+                <option selected>2 Bedrooms</option><option>3 Bedrooms</option><option>4+ Bedrooms</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Bathrooms</label>
+              <select><option>1</option><option selected>2</option><option>3</option><option>4+</option></select>
+            </div>
+            <div class="form-group">
+              <label>Pets at Home?</label>
+              <select><option>No Pets</option><option>Dogs</option><option>Cats</option><option>Dogs & Cats</option><option>Other</option></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <input type="text" value="1234 Maple Street, Austin, TX 78701"/>
+          </div>
+          <div class="form-group">
+            <label>Entry Instructions</label>
+            <textarea rows="3" placeholder="e.g. Key under mat, gate code is 1234..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Special Requests</label>
+            <textarea rows="3" placeholder="Any specific areas or products to avoid?"></textarea>
+          </div>
+          <div class="step-btns">
+            <button class="btn btn-ghost" id="backToStep2">← Back</button>
+            <button class="btn btn-primary" id="toStep4">Review Booking →</button>
+          </div>
+        </div>
+
+       
+        <div class="step-panel" id="step4">
+          <div class="step-header"><h2>Review & Confirm</h2><p>Double-check everything before booking.</p></div>
+          <div class="confirm-card">
+            <div class="confirm-row"><span>Service</span><strong id="cfService">Deep Cleaning</strong></div>
+            <div class="confirm-row"><span>Date</span><strong id="cfDate">Friday, April 4, 2026</strong></div>
+            <div class="confirm-row"><span>Time</span><strong id="cfTime">9:00 AM</strong></div>
+            <div class="confirm-row"><span>Address</span><strong>1234 Maple St, Austin TX</strong></div>
+            <div class="confirm-row"><span>Add-ons</span><strong id="cfAddons">None</strong></div>
+            <div class="confirm-divider"></div>
+            <div class="confirm-row total"><span>Total Estimate</span><strong id="cfTotal">$149</strong></div>
+          </div>
+          <div class="payment-section">
+            <h4>Payment Method</h4>
+            <div class="payment-methods">
+              <label class="pay-opt"><input type="radio" name="payment" value="card" checked/><span>💳 Credit/Debit Card</span></label>
+              <label class="pay-opt"><input type="radio" name="payment" value="paypal"/><span>🅿️ PayPal</span></label>
+              <label class="pay-opt"><input type="radio" name="payment" value="apple"/><span>🍎 Apple Pay</span></label>
+            </div>
+            <div class="card-fields" id="cardFields">
+              <div class="form-group"><label>Card Number</label><input type="text" placeholder="•••• •••• •••• ••••" maxlength="19"/></div>
+              <div class="form-row">
+                <div class="form-group"><label>Expiry</label><input type="text" placeholder="MM/YY" maxlength="5"/></div>
+                <div class="form-group"><label>CVV</label><input type="text" placeholder="•••" maxlength="3"/></div>
+              </div>
+            </div>
+          </div>
+          <div class="step-btns">
+            <button class="btn btn-ghost" id="backToStep3">← Back</button>
+            <button class="btn btn-primary btn-full" id="confirmBooking">🌿 Confirm Booking</button>
+          </div>
+        </div>
+
+      </div>
+
+    
+      <aside class="book-summary">
+        <div class="card summary-card">
+          <h3>Booking Summary</h3>
+          <div class="summary-service">
+            <div class="ss-icon">✨</div>
+            <div><strong id="sumService">Deep Cleaning</strong><span id="sumDate">Date not selected</span></div>
+          </div>
+          <div class="summary-items" id="summaryItems">
+            <div class="si-row"><span>Deep Cleaning</span><strong>$149</strong></div>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="si-row total-row"><span>Estimated Total</span><strong id="sumTotal">$149</strong></div>
+          <p class="summary-note">🌿 All services use 100% eco-certified products. No hidden fees.</p>
+        </div>
+        <div class="card eco-card">
+          <h4>🌍 Your Green Impact</h4>
+          <p>By choosing GreenNest, this booking will prevent approximately <strong>4 lbs</strong> of toxic chemicals from entering waterways.</p>
+        </div>
+      </aside>
+    </div>
+
+
+    <div class="success-modal" id="successModal">
+      <div class="success-inner">
+        <div class="success-icon">🎉</div>
+        <h2>Booking Confirmed!</h2>
+        <p>Your <strong id="modalService">Deep Cleaning</strong> is scheduled for <strong id="modalDate">April 4, 2026</strong>.</p>
+        <p class="success-sub">A confirmation email has been sent to you. Our eco-cleaner will arrive ready to go! 🌿</p>
+        <a href="dashboard.html" class="btn btn-primary">Back to Dashboard</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../js/shared.js"></script>
+<script src="../book-now/book-now.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard — Ecoshine Services</title>
+  <link rel="stylesheet" href="../css/shared.css"/>
+  <link rel="stylesheet" href="../dashboard/dashboard.css"/>
+</head>
+<body>
+
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    Ecoshine Services
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-group-label">Main</div>
+    <a class="nav-item active" href="../dashboard/dashboard.html"><span class="nav-icon">📊</span> Dashboard</a>
+    <a class="nav-item" href="../book-now/book-now.html"><span class="nav-icon">📅</span> Book Now <span class="nav-badge">New</span></a>
+  
+
+    <div class="nav-group-label">Management</div>
+    <a class="nav-item" href="#"><span class="nav-icon">🏠</span> My Cleanings</a>
+    <a class="nav-item" href="#"><span class="nav-icon">💳</span> Payments</a>
+    <a class="nav-item" href="#"><span class="nav-icon">⭐</span> Reviews</a>
+
+    <div class="nav-group-label">Account</div>
+    <a class="nav-item" href="#"><span class="nav-icon">👤</span> Profile</a>
+    <a class="nav-item" href="#"><span class="nav-icon">⚙️</span> Settings</a>
+    <a class="nav-item" href="#"><span class="nav-icon">🔔</span> Notifications <span class="nav-badge">3</span></a>
+  </nav>
+  <div class="sidebar-footer">
+    <div class="sidebar-user">
+      <div class="user-avatar">S</div>
+      <div class="user-info">
+        <strong>Sarah Mitchell</strong>
+        <span>Premium Member</span>
+      </div>
+      <span class="user-logout">⬡</span>
+    </div>
+  </div>
+</aside>
+
+
+<div class="page-wrap">
+
+
+  <header class="topbar">
+    <button class="topbar-menu-btn" id="menuBtn">☰</button>
+    <div class="topbar-title">Dashboard <span>Overview</span></div>
+    <div class="topbar-right">
+      <div class="topbar-search">
+        <span>🔍</span>
+        <input type="text" placeholder="Search..."/>
+      </div>
+      <button class="topbar-btn">
+        🔔
+        <span class="topbar-notif-dot"></span>
+      </button>
+      <div class="topbar-avatar">S</div>
+    </div>
+  </header>
+
+  
+  <main class="dash-main">
+
+  
+    <div class="welcome-banner" data-reveal>
+      <div class="welcome-text">
+        <h1>Good morning! 🌿</h1>
+        <p>Your home is sparkling clean. Next scheduled clean: <strong>Friday, April 4th</strong></p>
+      </div>
+      <a href="#" class="btn btn-primary">+ Book New Service</a>
+    </div>
+
+  
+    <div class="stats-grid">
+      <div class="stat-card" data-reveal data-delay="0">
+        <div class="stat-icon" style="background:#d8f3dc">🧹</div>
+        <div class="stat-info">
+          <span class="stat-label">Total Cleanings</span>
+          <strong class="stat-num" data-count="48">0</strong>
+        </div>
+        <div class="stat-change up">+12% ↑</div>
+      </div>
+      <div class="stat-card" data-reveal data-delay="80">
+        <div class="stat-icon" style="background:#fff0eb">💰</div>
+        <div class="stat-info">
+          <span class="stat-label">Total Spent</span>
+          <strong class="stat-num">$<span data-count="2340">0</span></strong>
+        </div>
+        <div class="stat-change up">This year</div>
+      </div>
+      <div class="stat-card" data-reveal data-delay="160">
+        <div class="stat-icon" style="background:#fdf5e0">⭐</div>
+        <div class="stat-info">
+          <span class="stat-label">Avg. Rating Given</span>
+          <strong class="stat-num">4.9</strong>
+        </div>
+        <div class="stat-change up">Excellent</div>
+      </div>
+      <div class="stat-card" data-reveal data-delay="240">
+        <div class="stat-icon" style="background:#e8f0ff">🌍</div>
+        <div class="stat-info">
+          <span class="stat-label">lbs Chemicals Avoided</span>
+          <strong class="stat-num" data-count="192">0</strong>
+        </div>
+        <div class="stat-change up">Great impact!</div>
+      </div>
+    </div>
+
+
+    <div class="mid-grid">
+     
+      <div class="card bookings-card" data-reveal>
+        <div class="card-header">
+          <h3>Upcoming Bookings</h3>
+          <a href="#" class="btn btn-soft btn-sm">+ Add</a>
+        </div>
+        <div class="booking-list">
+          <div class="booking-item">
+            <div class="booking-date">
+              <strong>04</strong><span>Apr</span>
+            </div>
+            <div class="booking-info">
+              <strong>Deep Cleaning</strong>
+              <span>9:00 AM · Cleaner: Maria G.</span>
+            </div>
+            <span class="badge badge-green">Confirmed</span>
+          </div>
+          <div class="booking-item">
+            <div class="booking-date">
+              <strong>18</strong><span>Apr</span>
+            </div>
+            <div class="booking-info">
+              <strong>Standard Cleaning</strong>
+              <span>11:00 AM · Cleaner: TBA</span>
+            </div>
+            <span class="badge badge-gold">Pending</span>
+          </div>
+          <div class="booking-item">
+            <div class="booking-date">
+              <strong>02</strong><span>May</span>
+            </div>
+            <div class="booking-info">
+              <strong>Air Quality Care</strong>
+              <span>2:00 PM · Cleaner: James R.</span>
+            </div>
+            <span class="badge badge-green">Confirmed</span>
+          </div>
+        </div>
+        <a href="#" class="card-footer-link">View all bookings →</a>
+      </div>
+
+ 
+      <div class="card eco-impact-card" data-reveal data-delay="100">
+        <div class="card-header">
+          <h3>Your Eco Impact</h3>
+          <span class="badge badge-green">🌿 Active</span>
+        </div>
+        <div class="impact-rings">
+          <div class="ring-wrap">
+            <svg viewBox="0 0 100 100" class="ring-svg">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="var(--cream-dark)" stroke-width="8"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="var(--green-light)" stroke-width="8"
+                stroke-dasharray="251.2" stroke-dashoffset="50" stroke-linecap="round"
+                transform="rotate(-90 50 50)" class="ring-progress"/>
+            </svg>
+            <div class="ring-label"><strong>80%</strong><span>Chemical<br>Free</span></div>
+          </div>
+          <div class="impact-stats">
+            <div class="ist"><span>🧴</span><div><strong data-count="192">0</strong> lbs toxic chemicals avoided</div></div>
+            <div class="ist"><span>💧</span><div><strong data-count="380">0</strong> gallons water saved</div></div>
+            <div class="ist"><span>♻️</span><div><strong data-count="96">0</strong> plastic bottles replaced</div></div>
+          </div>
+        </div>
+        <div class="eco-prog-list">
+          <div class="eco-prog-item">
+            <span>Carbon Footprint Reduction</span>
+            <div class="prog-bar"><span style="width:72%"></span></div>
+            <strong>72%</strong>
+          </div>
+          <div class="eco-prog-item">
+            <span>Water Conservation</span>
+            <div class="prog-bar"><span style="width:58%"></span></div>
+            <strong>58%</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bottom-grid">
+      
+      <div class="card activity-card" data-reveal>
+        <div class="card-header"><h3>Recent Activity</h3></div>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="act-dot green"></div>
+            <div class="act-info">
+              <strong>Deep Clean Completed</strong>
+              <span>March 21, 2026 · Maria G.</span>
+            </div>
+            <span class="badge badge-green">Done</span>
+          </div>
+          <div class="activity-item">
+            <div class="act-dot gold"></div>
+            <div class="act-info">
+              <strong>Invoice #GN-0048 Paid</strong>
+              <span>March 21, 2026 · $149.00</span>
+            </div>
+            <span class="badge badge-gold">Paid</span>
+          </div>
+          <div class="activity-item">
+            <div class="act-dot green"></div>
+            <div class="act-info">
+              <strong>Standard Clean Completed</strong>
+              <span>March 7, 2026 · James R.</span>
+            </div>
+            <span class="badge badge-green">Done</span>
+          </div>
+          <div class="activity-item">
+            <div class="act-dot blue"></div>
+            <div class="act-info">
+              <strong>Review Submitted ⭐⭐⭐⭐⭐</strong>
+              <span>March 7, 2026</span>
+            </div>
+            <span class="badge badge-blue">Review</span>
+          </div>
+          <div class="activity-item">
+            <div class="act-dot green"></div>
+            <div class="act-info">
+              <strong>Subscription Renewed</strong>
+              <span>March 1, 2026 · Monthly Plan</span>
+            </div>
+            <span class="badge badge-green">Active</span>
+          </div>
+        </div>
+      </div>
+
+ 
+      <div class="card cleaners-card" data-reveal data-delay="80">
+        <div class="card-header"><h3>My Cleaners</h3></div>
+        <div class="cleaner-list">
+          <div class="cleaner-item">
+            <div class="cleaner-avatar" style="background:var(--green-mid)">MG</div>
+            <div class="cleaner-info">
+              <strong>Maria Garcia</strong>
+              <span>Deep Clean Specialist</span>
+            </div>
+            <div class="cleaner-rating">⭐ 4.98</div>
+            <button class="btn btn-soft btn-sm">Rebook</button>
+          </div>
+          <div class="cleaner-item">
+            <div class="cleaner-avatar" style="background:#3b5bdb">JR</div>
+            <div class="cleaner-info">
+              <strong>James Rodriguez</strong>
+              <span>Air Quality Expert</span>
+            </div>
+            <div class="cleaner-rating">⭐ 4.95</div>
+            <button class="btn btn-soft btn-sm">Rebook</button>
+          </div>
+          <div class="cleaner-item">
+            <div class="cleaner-avatar" style="background:var(--gold)">LP</div>
+            <div class="cleaner-info">
+              <strong>Lisa Park</strong>
+              <span>Move-In Specialist</span>
+            </div>
+            <div class="cleaner-rating">⭐ 4.91</div>
+            <button class="btn btn-soft btn-sm">Rebook</button>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="card quick-card" data-reveal data-delay="160">
+        <div class="card-header"><h3>Quick Actions</h3></div>
+        <div class="quick-actions">
+          <a href="../Contact/Contact.html" class="quick-btn">
+            <span>📅</span><strong>Book Now</strong><small>Schedule a clean</small>
+          </a>
+          <a href="#" class="quick-btn">
+            <span>💬</span><strong>Chat Support</strong><small>Get help fast</small>
+          </a>
+          <a href="#" class="quick-btn">
+            <span>📄</span><strong>Invoices</strong><small>View & download</small>
+          </a>
+          <a href="#" class="quick-btn">
+            <span>🎁</span><strong>Referral</strong><small>Earn $20 credit</small>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="../js/shared.js"></script>
+<script src="../dashboard/dashboard.js"></script>
+</body>
+</html>
